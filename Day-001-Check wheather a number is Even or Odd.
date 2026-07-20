@@ -1,1 +1,21 @@
-s
+
+import java.util. Scanner;
+public class DAY001{
+    public static void main(String [] args){
+    Scanner sc= new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n= sc.nextInt();
+       
+        if (n%2==0){
+            System.out.println("the number you have entered is an even number.");
+        }
+        else{
+            System.out.println("the number you have entered is an odd number.");
+
+           
+        }
+       
+
+    }
+}
