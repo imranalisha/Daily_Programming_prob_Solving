@@ -1,0 +1,37 @@
+
+#include <iostream>
+using namespace std;
+int main(){
+int value, num, sum=0;
+        //System.out.print("enter a number: ");    java
+        cout<<"enter a number: ";
+//int value= sc.nextInt();    java    
+cin>>num;
+       
+        while(num!=0){
+           sum= sum+num%10;  //  num%10 give the last digit only
+            num= num/10;     // num/10  chops(erase)the last digit (the reminder) and provide the new number
+                        //  after removing the reminder for the next loop to find the reminder again ---e.g 123  -> 12 -> 1
+}
+
+cout<<"\nthe sum the entered number is : " <<sum;
+       
+
+                     
+         //ANOTHER WAY OF DOING THE SAME WORK   just (n=v) copies and say sum of xyz is a.
+                     
+        int v,n, s=0;                      
+        cout<<"\n \n \nEnter a number: ";
+   cin>>v;
+                     
+        n=v ;
+                     
+        while(n!=0){
+                     
+s=s+n%10;
+                     
+            n=n/10;
+ }
+ 
+cout<<"\nthe sum of " << v << " is : " << s;  
+}
