@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std; 
+
+int ReverseNumber(int num){
+    int rev=0;
+    
+    while(num!=0){
+        
+        int r=  num%10;
+        
+        rev=rev* 10+r;
+        
+        num=num/10;
+        
+        
+        
+    } 
+    return rev;
+    
+}
+
+int main(){
+    
+    int num;
+    cout<<"enter the Number:------------->   ";
+    cin>>num;
+    
+    int reverse= ReverseNumber(num);
+    
+    cout<<"The reverse of the entered number is ------------->   "<<reverse;
+    
+}
+
+
+
+
+         ============WHILE LOOP=============
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+
+int num,temp,r,rev=0;
+
+cout<<"enter a number: ";
+cin>>num;
+
+temp=num;     /*we use temp to copy the number we entered in another variable for printing \
+                  /purpose>>   the reverse of the 123 is 321.without temp it will be like
+                        the reverse of the 0 is 321.*/
+
+
+
+while(temp!=0){     //LETS SAY WE ENTERED 123
+
+r=temp%10;    // 123%10=3          12 %10=  2           1%10=1
+rev=rev*10+r;  // 0*10+3= -->3   ^ 0*10+2+= 2  -->32   ^ )*10+1=1 -->321
+temp/=10;      //123/10=12  _____^  12/10=  1__________^  1/10= 0 loop end here.
+}
+
+cout<<"\nthe reverse of the "<<num<<" is: "<<rev<<endl;
+
+}
+
+
+
+         ============FOR LOOP=============
+
+#include <iostream>
+using namespace std;
+int main(){
+int num, rev=0;
+cout<<"Enter a number:  ";
+cin>>num;
+
+for(int temp=num; temp!=0; temp/=10){
+
+int r=temp%10;
+
+rev=rev*10+r;
+
+}
+
+cout<<"The reverse of " <<num<<" is : " << rev;
+}
