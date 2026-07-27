@@ -1,5 +1,10 @@
+
+//                           ==============An Adam number is a number whose square and the square of its reverse are the exact reverse of each other. ===============
+
+
+
 #include<iostream>
-#include<math.h>// header file OR library: I have used it because in my program I have used a mathematical function sqrt().
+#include<math.h> // header file OR library: I have used it because in my program I have used a mathematical function sqrt().
 
 using namespace std;
 int main(){
@@ -37,3 +42,6 @@ else{
 cout<<num<<" is not an Adam Number.";
 }
 }
+
+
+                    
