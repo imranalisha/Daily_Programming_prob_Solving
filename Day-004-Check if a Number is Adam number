@@ -1,1 +1,39 @@
+#include<iostream>
+#include<math.h>// header file OR library: I have used it because in my program I have used a mathematical function sqrt().
 
+using namespace std;
+int main(){
+int num, temp, rev1=0,rev2=0,r1,r2,sq;
+
+
+cout<<"enter a number: ";
+cin>>num;
+
+temp=num*num;
+                                        //lets say num==12
+while(temp!=0){
+r1=temp%10;
+rev1=rev1*10+r1;     //this while block takes a number-->sqr-->reverese it.  441
+temp/=10;
+
+
+
+}
+
+sq= sqrt(rev1);      //takes the square root of the first reversed number   441 srt =>21
+
+while(sq!=0){
+
+r2=sq%10;
+rev2=rev2*10+r2;        //this while block  reverse the sq=> 21 ...which becomes 12 again so it is adam number
+sq/=10;
+
+
+}
+if (rev2==num){
+cout<<num<<" is an Adam Number.";           // it compares the rev2 and the entered number num
+}
+else{
+cout<<num<<" is not an Adam Number.";
+}
+}
