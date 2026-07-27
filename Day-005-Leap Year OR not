@@ -14,3 +14,33 @@ int main(){
 	
 	return 0;
 }
+
+// ============SAME TASK BUT ASKS FROM USER UNLESS HE STOPS CHECKING IT============    -----------USING DO-WHILE LOOP--------
+
+#include<iostream>
+using namespace std;
+int main(){
+	
+	char choice;
+	do{
+		int year;
+		cout<<"enter The year in YYYY format:  ";
+		cin>>year;
+		
+		if (year%400==0|| year %4==0&& year%100!=0){
+			cout<<year <<" is a leap year.";
+		}
+		else
+		cout<<year <<" is not a leap year. "<<endl;
+		cout<<"-----YOU WANT TO CHECK MORE----Y/N or y/n  :";
+		cin>>choice;
+	}
+	
+	while(choice=='Y'||choice=='y');
+	{
+		cout<<"===== program Ended=====\a";
+	}
+
+return 0;
+}
+
