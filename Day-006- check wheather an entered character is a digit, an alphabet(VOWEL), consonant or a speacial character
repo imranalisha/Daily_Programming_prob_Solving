@@ -1,0 +1,31 @@
+#include<iostream>
+#include<ctype.h>      /*provides a collection of built-in functions used to classify and transform individual characters. 
+                        These functions allow you to check if a character is a letter, a digit, punctuation, or whitespace, 
+                        and convert character casing easily.
+                        */
+
+using namespace std;
+int main(){
+	
+	char test;
+	cout<<"enter a character: ";
+	cin>>test;
+	
+	
+	if(isdigit(test)){             //isdigit() -- abuiltin function in the ctype.h
+		cout<<test<<" is a digit";     
+	}
+	
+	
+	else if(isalpha(test)){          //isalpha() -- abuiltin function in the ctype.h
+	
+	
+	if (test=='A'||test=='E'||test=='I'||test=='O'||test=='U'||test=='a'||test=='e'||test=='i'||test=='o'||test=='u')
+		cout<< test<<" is a VOWEL";
+		
+		else
+		cout<<"is a consonant";
+		
+}
+return 0;
+}
