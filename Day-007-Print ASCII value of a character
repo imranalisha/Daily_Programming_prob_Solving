@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+	char ch;
+	cout<<"enter a charater: ";
+	cin>>ch;
+	
+	cout<<"the ASCII of "<<ch<<" is :"<<(int)ch;
+	
+}
