@@ -8,3 +8,16 @@ int main(){
 	cout<<"the ASCII of "<<ch<<" is :"<<(int)ch;
 	
 }
+//                         ===============ASCII ---> CHAR==================
+
+#include<iostream>
+using namespace std;
+int main(){
+	int ascii;
+	cout<<"Enter an ASCII value : ";
+	cin>>ascii;
+	
+	cout<<"The Character of "<<ascii<<" is :"<<(char)ascii;
+	return 0;
+	
+}
